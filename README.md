@@ -4,14 +4,15 @@ A responsive, media-rich tribute website dedicated to Chelsea Football Club's hi
 
 ## 🏆 Project Overview
 
-This website serves as an interactive historical archive for Chelsea fans, documenting key tournament campaigns, match lineups, scorers, and trophy-lifting moments. 
+This website serves as an interactive historical archive for Chelsea fans, documenting key tournament campaigns, match lineups, scorers, and trophy-lifting moments.
 Check it out at **https://chelsea-trophy-journey.pages.dev/**
 
 The site breaks down the historical journeys into four dedicated sections:
-* **UEFA Champions League:** Highlights from the iconic 2012 Munich triumph and the 2021 victory in Porto.
-* **UEFA Europa League:** Details on the 2013 win against Benfica and the 2019 London-derby victory against Arsenal in Baku.
-* **UEFA Europa Conference League:** Review of the thrilling 2024/25 campaign culminating in the dramatic comeback final victory against Real Betis in Wroclaw.
-* **FIFA Club World Cup:** Documentation of the 2021 global crown and the subsequent 2025 campaign.
+
+- **UEFA Champions League:** Highlights from the iconic 2012 Munich triumph and the 2021 victory in Porto.
+- **UEFA Europa League:** Details on the 2013 win against Benfica and the 2019 London-derby victory against Arsenal in Baku.
+- **UEFA Europa Conference League:** Review of the thrilling 2024/25 campaign culminating in the dramatic comeback final victory against Real Betis in Wroclaw.
+- **FIFA Club World Cup:** Documentation of the 2021 global crown and the subsequent 2025 campaign.
 
 ## 📁 File Structure
 
@@ -32,3 +33,4 @@ The site breaks down the historical journeys into four dedicated sections:
     ├── Europa_league/
     ├── Club_world_cup/
     └── Conference_league/
+```
