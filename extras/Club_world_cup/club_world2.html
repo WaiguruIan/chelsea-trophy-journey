@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2025 Club World Cup</title>
+    <style>
+      nav {
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+      }
+      nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color: #ffee00;
+        color: black;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        overflow-x: hidden;
+        background-color: rgb(0, 0, 0, 1);
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("../../templates/club_world_cup/pxfuel.jpg");
+        background-size: contain;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        filter: brightness(100%);
+      }
+      .intro,
+      .det,
+      .det2,
+      .det3,
+      .det4,
+      .match,
+      .match2 {
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.2);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        line-height: 1.6;
+        padding: 20px;
+        filter: opacity(2000%);
+        filter: brightness(150%);
+      }
+      .heading1 h1 {
+        margin: 0px;
+        text-align: center;
+        color: #ffe02d;
+        background-color: rgba(0, 0, 0, 0.2);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        line-height: 1.6;
+        padding: 20px;
+      }
+      .para1 p {
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.2);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        line-height: 1.6;
+        padding: 20px;
+        filter: opacity(2000%);
+        filter: brightness(150%);
+      }
+      .neto .text {
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.2);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        line-height: 1.6;
+        padding: 0px;
+        filter: opacity(2000%);
+        filter: brightness(150%);
+      }
+      .neto .neto-img {
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      .neto img {
+        width: 700px;
+        padding-bottom: 10px;
+        border-radius: 40px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .neto img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .neto figcaption {
+        color: aqua;
+        font-style: italic;
+        font-size: 13px;
+        padding-top: 10px;
+      }
+      .pedro-and-palmer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 40px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+      .pedro-and-palmer img {
+        width: 100%;
+        width: 750px;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .pedro-and-palmer img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .pedro-and-palmer .text {
+        width: 100%;
+        font-size: 19px;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+      }
+      .pedro-and-palmer figcaption {
+        color: aqua;
+        font-style: italic;
+        font-size: 13px;
+        padding: 12px;
+      }
+      .palmer {
+        align-items: center;
+        justify-content: space-between;
+        gap: 0px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+      .palmer .palmer-img img {
+        width: 100%;
+        width: 750px;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .palmer img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .palmer .text {
+        width: 100%;
+        font-size: 19px;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+      }
+      .palmer figcaption {
+        color: aqua;
+        font-style: italic;
+        font-size: 13px;
+        padding: 12px;
+      }
+      .palmer_2-0 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 40px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+      .palmer_2-0 img {
+        width: 100%;
+        width: 750px;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .palmer_2-0 img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .palmer_2-0 .text {
+        width: 100%;
+        font-size: 19px;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+      }
+      .palmer_2-0 figcaption {
+        color: aqua;
+        font-style: italic;
+        font-size: 13px;
+        padding: 12px;
+      }
+      .Joao_scores {
+        align-items: center;
+        justify-content: space-between;
+        gap: 0px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+      .Joao_scores img {
+        width: 100%;
+        width: 750px;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .Joao_scores img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .Joao_scores .text {
+        width: 100%;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+      }
+      .Joao_scores figcaption {
+        color: aqua;
+        font-style: italic;
+        font-size: 13px;
+        padding: 12px;
+      }
+      .full-time {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 40px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+      .full-time img {
+        width: 100%;
+        width: 750px;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .full-time img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .full-time .text {
+        width: 100%;
+        font-size: 19px;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+      }
+      .full-time figcaption {
+        color: aqua;
+        font-style: italic;
+        font-size: 13px;
+        padding: 12px;
+      }
+      .teams {
+        text-align: initial;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin-left: 120px;
+        margin-right: 120px;
+        padding: 10px;
+      }
+      .teams h2 {
+        color: rgb(236, 186, 59);
+        text-align: center;
+        margin-right: 50px;
+      }
+      .teams p {
+        color: #ffffff;
+        font-size: 20px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+      }
+      footer {
+        background-color: rgba(0, 0, 0, 0.2);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        width: 100%;
+        bottom: 0;
+      }
+      footer p {
+        margin: 5px 0 0 0;
+        color: white;
+        font-size: 14px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a alt="back" href="../../club world cup.html">BACK</a>
+    </nav>
+
+    <div class="intro">
+      <h1>FIFA CLUB WORLD CUP 2025 FINAL</h1>
+      <h3>We’ve won it all!!</h3>
+    </div>
+
+    <div class="det">
+      <h3>
+        Chelsea are champions! And this time it is global, after Cole Palmer
+        inspired us to an incredible 3-0 victory over Paris Saint-Germain in the
+        FIFA Club World Cup final.
+      </h3>
+
+      <p>
+        In one of the best performances yet under Enzo Maresca, Chelsea blew the
+        recently crowned UEFA Champions League winners away with a stunning
+        performance at the MetLife Stadium in New Jersey.
+      </p>
+
+      <p>
+        An exhilarating opening 45 minutes of football by Chelsea left Paris
+        Saint-Germain in shock and the Blues supporters in the USA in dreamland,
+        as we led 3-0 at the break.
+      </p>
+
+      <p>
+        Palmer had already warned PSG by going agonisingly close before striking
+        twice with almost identical finishes placed into the bottom-left corner,
+        first after good running by Gusto and the second with a lovely piece of
+        skill to make space on the edge of the box.
+      </p>
+
+      <p>
+        Cole then turned provider to tee up Joao Pedro for his third goal in two
+        starts for Chelsea at this tournament, showing great composure himself
+        to lift the ball over the keeper.
+      </p>
+    </div>
+
+    <div class="match">
+      <h2>Strong start</h2>
+      <p>
+        As the designated home team, Chelsea were in our famous Blue shirts,
+        while PSG were in their all-white change colours. A lovely touch by
+        Palmer before combining with James and Joao Pedro meant it was the Blues
+        who threatened first. Gianluigi Donnarumma was able claim Palmer’s
+        resulting cross, but it had set the tone, and we were the team starting
+        the match on the front foot.
+      </p>
+      <p>
+        Our high pressing seemed to cause PSG problems early on, as they looked
+        uncomfortable when playing out from the back, although Neto had to do
+        well to snuff out a long ball and prevent Desire Doue getting free on
+        the counter.
+      </p>
+    </div>
+
+    <section class="neto">
+      <div class="neto-img">
+        <figure>
+          <img
+            src="https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/editorial/match-reports/2025-26/PSG%20CWC%20final/Pedro_Neto_vs_PSG_2.jpg"
+            data-src="https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/editorial/match-reports/2025-26/PSG%20CWC%20final/Pedro_Neto_vs_PSG_2.jpg"
+            alt="Neto needed to be alert at both ends of the pitch early on"
+          />
+          <figcaption>
+            Neto needed to be alert at both ends of the pitch early on
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <div class="match2">
+      <p>
+        Most of the stadium thought Chelsea had taken the lead inside the first
+        10 minutes, and Palmer couldn’t have come much closer. A fine move
+        involving several players culminated in a clever flick from Joao Pedro,
+        teeing up Cole just inside the box. He tried to curl into the top
+        corner, but his effort swung just the wrong side of the post and swept
+        around the outside of the net.
+      </p>
+
+      <p>
+        The French side began to even things out a bit more in terms of
+        possession as the first half drew on, while Achraf Hakimi was starting
+        to look like a potential source of danger marauding forward from
+        right-back, this was a very promising opening from Chelsea.
+      </p>
+
+      <p>
+        PSG were now showing why they have been so successful over the last
+        year. Cucurella had to produce a brilliant piece of defending to prevent
+        what looked a certain goal, as Doue arrived at the back post and tried
+        to find a team-mate for a tap in. Then Sanchez got down low to save from
+        Doue again.
+      </p>
+    </div>
+
+    <section class="pedro-and-palmer">
+      <div class="text">
+        <p>
+          We held firm to deny Paris any chance of a fightback in the second
+          half, with their chances already slipping away even before a straight
+          red card for Joao Neves a few minutes from the end. As it was, our
+          incredible first-half performance had earned us the title of world
+          champions.
+        </p>
+      </div>
+      <div class="joao-pedro-crowns-img">
+        <figure>
+          <img
+            src="https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/editorial/match-reports/2025-26/PSG%20CWC%20final/Joao_Pedro_celebrates_goal_vs_PSG.jpg"
+            data-src="https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/editorial/match-reports/2025-26/PSG%20CWC%20final/Joao_Pedro_celebrates_goal_vs_PSG.jpg"
+            class="blur-up image-is-loaded ls-is-cached lazyloaded"
+            alt="Joao Pedro crowns our king of the Club World Cup final"
+          />
+          <figcaption>
+            Joao Pedro crowns our king of the Club World Cup final
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="heading1">
+      <h1>The man for the big occasion</h1>
+      <div class="para1">
+        <p>
+          It was a first-half display that will live long in the memory for all
+          Chelsea fans, and none more so than for Cole Palmer. The 21-year-old
+          England International had already shown his big-game temperament in
+          the Euro 2025 final vs Spain earlier this year, and he was at it again
+          here.
+        </p>
+      </div>
+    </div>
+
+    <section class="palmer">
+      <div class="text">
+        <p>
+          When the piece of composure arrived that would give this final it’s
+          first goal, it came from a player wearing Blue. Who else to stay cool
+          in the heat and pressure but Palmer.
+        </p>
+      </div>
+      <div class="palmer-img">
+        <figure>
+          <img
+            src="https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/editorial/match-reports/2025-26/PSG%20CWC%20final/Cole_Palmer_celebrates_vs_PSG.jpg"
+            data-src="https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/editorial/match-reports/2025-26/PSG%20CWC%20final/Cole_Palmer_celebrates_vs_PSG.jpg"
+            class="blur-up false ls-is-cached lazyloaded"
+            alt="Palmer celebrates his opening goal"
+          />
+          <figcaption>Palmer celebrates his opening goal</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="det2">
+      <p>
+        It was Gusto who was initially released on the right as we looked more
+        and more towards quick attacks, particularly down that flank. The
+        full-back charged into the box and turned inside looking for a sight of
+        goal. His shot was blocked at close range, but the ball found its way to
+        Cole, and this time he found his spot.
+      </p>
+
+      <p>
+        Steadying himself for a second, our No10 rolled a perfect finish into
+        the bottom-left corner, from an almost identical position to his narrow
+        miss earlier. Donnarumma had no chance and Chelsea were 1-0 up in the
+        Club World Cup final.
+      </p>
+
+      <p>
+        Before long Cole had done it again, as PSG struggled to work out how to
+        deal with Palmer’s skill and movement. This time he was found in the
+        right channel by a fine raking pass from Colwill, before displaying all
+        his talent.
+      </p>
+    </div>
+
+    <section class="palmer_2-0">
+      <div class="text">
+        <p>
+          As he carried the ball across the edge of the box, he used the runs of
+          Gusto and Joao Pedro to distract his marker Lucas Beraldo, sold the
+          defender with a deft dummy to give himself space, then sent an almost
+          identical finish in the same bottom-left corner.
+        </p>
+      </div>
+      <div class="palmer-img2">
+        <figure>
+          <img
+            src="https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/editorial/match-reports/2025-26/PSG%20CWC%20final/Cole_Palmer_2nd_goal_vs_PSG.jpg"
+            data-src="https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/editorial/match-reports/2025-26/PSG%20CWC%20final/Cole_Palmer_2nd_goal_vs_PSG.jpg"
+            alt="Cole makes it 2-0"
+          />
+          <figcaption>Cole makes it 2-0</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="det3">
+      <h1>Incredible first-half performance</h1>
+      <p>
+        That made Palmer the first player ever to have scored twice in a single
+        half against Luis Enrique’s PSG. But he wasn’t finished there, as our
+        first half continued to get better and better. Cole was key again,
+        carrying the ball forward into space as the wary French defenders backed
+        off fearing the shot.
+      </p>
+
+      <p>
+        Instead, Palmer picked out the run of Joao Pedro with a perfectly
+        weighted through-ball, releasing the striker in the box. The Brazilian’s
+        finish was just as good, nervelessly lifting a cheeky chip over the
+        onrushing Donnarumma and high into the net.
+      </p>
+    </div>
+
+    <section class="Joao_scores">
+      <div class="text">
+        <p>
+          Paris tried to hit back, but the best they could manage before
+          half-time was a couple of crosses. Sanchez ended that threat first by
+          flying out to punch clear, then saving a weak header comfortably. At
+          half-time, the scoreline read 3-0 to the Blues!
+        </p>
+      </div>
+      <div class="joao-img">
+        <figure>
+          <img
+            src="https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/editorial/match-reports/2025-26/PSG%20CWC%20final/Joao_Pedro_vs_PSG.jpg"
+            data-src="https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/editorial/match-reports/2025-26/PSG%20CWC%20final/Joao_Pedro_vs_PSG.jpg"
+            class="blur-up false lazyloaded"
+            alt="Joao Pedro adds his name to the scoresheet with a great finish"
+          />
+          <figcaption>Joao Pedro makes it 3-0!</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="det4">
+      <p>
+        It was all working in Chelsea's favour, though, as the clock continued
+        to run down and we edged towards the final whistle with our healthy
+        three-goal lead still intact. Our chances of seeing things out were
+        given another boost when Paris were reduced to 10 men.
+      </p>
+
+      <p>
+        Joao Neves was initially booked, but VAR advised the referee to go to
+        the pitchside monitor and it was clear he had pulled Cucurella back by
+        his hair. A straight red card was issued and we were now just a few
+        minutes away.
+      </p>
+    </div>
+
+    <section class="full-time">
+      <div class="text">
+        <p>
+          the full-time whistle came and it was time for the Blues to celebrate,
+          after a masterclass in how to nullify and counter the team many had
+          labelled as the best in the world going into this final. That is now a
+          title which officially belongs to the Blues.
+        </p>
+      </div>
+      <div class="fulltime-img">
+        <figure>
+          <img
+            src="https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/editorial/match-reports/2025-26/PSG%20CWC%20final/Caicedo_GettyImages-2224948861.jpg"
+            data-src="https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/editorial/match-reports/2025-26/PSG%20CWC%20final/Caicedo_GettyImages-2224948861.jpg"
+            class="blur-up false lazyloaded"
+            alt="Elation at the full-time whistle"
+          />
+          <figcaption>Elation at the full-time whistle</figcaption>
+        </figure>
+      </div>
+    </section>
+    <div class="teams">
+      <h2>
+        <strong><b>The teams</b></strong>
+      </h2>
+      <p>
+        <strong>Chelsea (4-2-3-1):</strong> Sanchez; Gusto, Chalobah, Colwill,
+        Cucurella; James (c) (Dewsbury-Hall 78'), Caicedo; Palmer, Fernandez
+        (Santos 61'), Neto (Nkunku 78'); Joao Pedro (Delap 68')<br /><strong
+          >Unused subs:</strong
+        >
+        Jorgensen, Penders, Slonina, Acheampong, Anselmino, Sarr, Tosin, Lavia,
+        George, Guiu, Jackson<br /><strong>Scorer⚽🥅:</strong> Palmer 22', 30',
+        Joao Pedro 43'<br /><strong>Booked🟨:</strong> Neto 34', Caicedo 36',
+        Gusto 41', Colwill 82'
+      </p>
+
+      <p>
+        <strong>Paris Saint-Germain:</strong> Donnarumma, Hakimi (Ramos 73'),
+        Marquinhos (c), Berlado, Mendes, Ruiz (Zaire-Emery 73'), Vitinha, Neves,
+        Doue (Mayulu 73'), Dembele, Kvaratskhelia (Barcola 59')<br /><strong
+          >Unused subs:</strong
+        >
+        Safanov, Tenas, Kamara, Kimpembe, Lee, Moscardo, Mbaye<br /><strong
+          >Booked🟨:</strong
+        >
+        Dembele 87', Mendes 90+4'<br /><strong>Sent off🟥:</strong> Neves 86'
+      </p>
+
+      <p><strong>Referee:</strong> Alireza Faghani</p>
+
+      <p><strong>Crowd:</strong> 81,118</p>
+      <h2></h2>
+    </div>
+    <footer>
+      <img
+        class="logo"
+        src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_110,w_110,q_auto:best/Site%20Chelsea%20Badges/Main_Website_Badge_-_Colour.png"
+        data-src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_110,w_110,q_auto:best/Site%20Chelsea%20Badges/Main_Website_Badge_-_Colour.png"
+        class="blur-up false ls-is-cached lazyloaded"
+        alt="Main Website Badge   Colour"
+      />
+      <p>© 2025 Chelsea Football Club. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

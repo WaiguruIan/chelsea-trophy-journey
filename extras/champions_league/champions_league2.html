@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2021 Champions League</title>
+    <style>
+      header {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        text-align: center;
+        margin-top: 30px;
+        color: blue;
+        font-size: 24px;
+        background-color: rgba(0, 0, 0, 0.2);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        margin: 0px;
+      }
+      nav {
+        background-color: rgba(0, 0, 0, 0);
+        overflow: hidden;
+      }
+      nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color: #00d9ff;
+        color: black;
+      }
+      .intro {
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        background-color: rgba(0, 0, 0, 0.2);
+        font-size: 22px;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        line-height: 1.6;
+        padding: 20px;
+      }
+      .kai {
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 0px;
+        padding: 20px;
+      }
+      .images .kai {
+        text-align: center;
+        align-items: flex-end;
+      }
+      .images img {
+        width: 65%;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .images img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+      }
+      .images .about {
+        background-color: rgba(0, 0, 0, 0.2);
+        color: aliceblue;
+        padding: 20px;
+        margin: 0px;
+        font-size: 20px;
+      }
+      .images figcaption,
+      .bicycle figcaption {
+        color: rgb(3, 255, 179);
+        padding-top: 20px;
+        font-style: italic;
+      }
+      .bicycle {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 40px;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      .bicycle .text {
+        color: rgb(255, 255, 255);
+        margin: 0px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        font-size: 20px;
+      }
+      .bicycle img {
+        width: 750px;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .bicycle img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow-x: hidden;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("champ2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        filter: brightness(100%);
+      }
+      .competition-images .images {
+        display: flex;
+        justify-content: center;
+        gap: 0px;
+        padding: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 0px;
+      }
+      .competition-images .images img {
+        width: 600px;
+        border-radius: 10px;
+      }
+      .competition-images .image {
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 0px;
+        margin-top: 0px;
+      }
+      .competition-images .image img {
+        width: 400px;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .competition-images .image img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+      }
+      .competition-images .title {
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 1px;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 0px;
+        margin-bottom: 0px;
+      }
+      footer {
+        background-color: rgba(0, 0, 0, 0.2);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        width: 100%;
+        bottom: 0;
+      }
+      footer p {
+        margin: 5px 0 0 0;
+        color: white;
+        font-size: 14px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="../../champions league.html">BACK</a>
+    </nav>
+    <header>
+      <h1>2021 Champions League</h1>
+    </header>
+
+    <div class="intro">
+      <p>
+        The 2020–21 UEFA Champions League was the 66th season of Europe's
+        premier club football tournament organized by UEFA, and the 29th season
+        since it was renamed from the European Champion Clubs' Cup to the UEFA
+        Champions League. The final was played at the Estádio do Dragão in
+        Porto, Portugal, between English clubs Manchester City and Chelsea.
+        Chelsea won 1–0 for their second title in the competition.
+      </p>
+      <p>
+        Our road to the final began in the group stage, where we were drawn
+        alongside Sevilla, Krasnodar and Rennes. We topped the group with five
+        wins from six games, scoring 12 goals and conceding just three. In the
+        round of 16 we faced Atletico Madrid, winning 3-0 on aggregate thanks to
+        goals from Timo Werner, Mason Mount and Olivier Giroud.
+      </p>
+    </div>
+    <section class="bicycle">
+      <div class="text">
+        <p>
+          In the quarters we beat Porto 2-1 on aggregate, both games played in
+          Seville, and prior to that we impressively defeated the Spanish
+          champions Atletico Madrid 3-0 over two legs. Olivier Giroud had lit up
+          the 'away' win - contested in Bucharest - with a spectacular bicycle
+          kick.
+        </p>
+      </div>
+      <figure>
+        <img
+          src="https://img.chelseafc.com/image/upload/f_auto,w_1440,c_fill,q_90/editorial/match-reports/2020-21/atletico-madrid-away/Giroud_GettyImages-1303739554.jpg"
+          data-src="https://img.chelseafc.com/image/upload/f_auto,w_1440,c_fill,q_90/editorial/match-reports/2020-21/atletico-madrid-away/Giroud_GettyImages-1303739554.jpg"
+          class="blur-up image-is-loaded ls-is-cached lazyloaded"
+          alt="Giroud GettyImages 1303739554"
+        />
+        <figcaption>
+          Olivier Giroud scores a spectacular bicycle kick against Atletico
+          Madrid in the 2021 UEFA Champions League quarter-final.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="images">
+      <div class="about">
+        <p>
+          In the semi-final we faced Real Madrid, the most successful club in
+          the competition's history. A first-leg win in Seville thanks to a
+          Christian Pulisic goal was followed by a 2-0 victory in the second
+          leg, with goals from Timo Werner and Mason Mount sending us to the
+          final.
+        </p>
+        <p>
+          The final against Manchester City was a tight affair, with both teams
+          creating chances but unable to find a breakthrough until late in the
+          game. Kai Havertz scored the only goal of the match in the 42nd
+          minute, latching onto a through ball from Mason Mount and calmly
+          slotting it past Ederson to secure Chelsea's second Champions League
+          title.
+        </p>
+      </div>
+      <div class="kai">
+        <figure>
+          <img
+            src="https://img.chelseafc.com/image/upload/f_auto,w_1440,c_fill,q_90/editorial/match-reports/2020-21/champions-league-final/Havertz-goal-cl-final-2.jpg"
+            data-src="https://img.chelseafc.com/image/upload/f_auto,w_1440,c_fill,q_90/editorial/match-reports/2020-21/champions-league-final/Havertz-goal-cl-final-2.jpg"
+            class="blur-up false lazyloaded ls-is-cached"
+            alt="Havertz goal cl final 2"
+          />
+          <figcaption>
+            Kai Havertz scores the only goal in the 2021 UEFA Champions League
+            Final against Manchester City.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="competition-images">
+      <div class="title">
+        <h2><u>2021 Champions League Competition Images</u></h2>
+      </div>
+      <div class="images">
+        <figure>
+          <img src="champions2021/champions_2.jpg" alt="Lifting the trophy" />
+        </figure>
+        <figure>
+          <img src="champions2021/champions_3.jpg" alt="Kante" />
+        </figure>
+      </div>
+
+      <div class="image">
+        <figure>
+          <img src="champions2021/champions_1.jpg" alt="Mason Mount" />
+        </figure>
+      </div>
+    </section>
+
+    <footer>
+      <img
+        class="logo"
+        src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_110,w_110,q_auto:best/Site%20Chelsea%20Badges/Main_Website_Badge_-_Colour.png"
+        data-src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_110,w_110,q_auto:best/Site%20Chelsea%20Badges/Main_Website_Badge_-_Colour.png"
+        class="blur-up false ls-is-cached lazyloaded"
+        alt="Main Website Badge   Colour"
+      />
+      <p>© 2025 Chelsea Football Club. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

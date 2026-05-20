@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conference league</title>
+    <style>
+      header {
+        color: white;
+        padding: 25px 0;
+        text-align: center;
+        font-size: 38px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      nav {
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+      }
+      nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color: #81dd2b;
+        color: black;
+      }
+      p {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        line-height: 1.6;
+      }
+      .intro {
+        background-color: rgba(0, 0, 0, 0.5);
+        margin: 0px;
+        padding: 20px;
+        color: white;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        overflow-x: hidden;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("templates/conference_league/pxfuel\ \(1\).jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        filter: brightness(100%);
+      }
+      .cole-palmer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+      }
+
+      .cole-palmer figure img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .cole-palmer .text {
+        width: 45%;
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+      .sancho {
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+      }
+
+      .sancho figure img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .sancho .text {
+        width: 40%;
+        font-family: Arial, sans-serif;
+        color: #333;
+        font-size: 16px;
+      }
+      figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      figure img {
+        width: 250px;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      figure img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      figcaption {
+        font-style: italic;
+        margin-top: 10px;
+        font-size: 14px;
+        color: cyan;
+        text-align: center;
+      }
+      .teams {
+        color: bisque;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin: 0px;
+        padding: 10px;
+      }
+      footer {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        margin: 0px;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        width: 100%;
+        bottom: 0;
+      }
+      footer p {
+        margin: 10px, 0, 0, 0;
+        color: white;
+        font-size: 14px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        font-style: italic;
+      }
+      .trophy_video {
+        background-color: rgba(0, 0, 0, 0.5);
+        margin: 0px;
+        padding: 20px;
+      }
+      #trophy-video {
+        display: block;
+        margin: 20px auto;
+        width: 60%;
+        height: auto;
+        border-radius: 40px;
+        margin-top: 50px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      #trophy-video:hover {
+        transform: scale(1.15);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">BACK TO HOMEPAGE</a>
+    </nav>
+    <header>OUR UEFA EUROPA CONFERENCE LEAGUE JOURNEY</header>
+    <div class="intro">
+      <h2 class="intro-text">
+        Chelsea's European adventures continued in 2024/25 as we competed in the
+        inaugural UEFA Europa Conference League. After a strong group stage and
+        impressive knockout round performances, we reached the final against
+        Real Betis in Wroclaw, Poland.
+      </h2>
+      <h2>
+        On the European stage, Chelsea delivered once again. A stunning
+        second-half performance was this time the difference for the Blues, as
+        we came back from a goal down to emphatically defeat Real Betis and win
+        the Conference League.
+      </h2>
+      <br />
+      <div class="exp">
+        <h3 style="text-align: center"><u>What Occured</u></h3>
+        <p>
+          Abde Ezzalzouli had put Betis ahead inside nine minutes in Wroclaw and
+          Enzo Maresca's side went into the interval behind. Yet 45 minutes is a
+          long time in football, as the Blues convincingly proved.
+        </p>
+      </div>
+    </div>
+
+    <section class="cole-palmer">
+      <div class="text">
+        <p>
+          Cole Palmer was crucial to the comeback, as he produced the cross that
+          Enzo Fernandez headed home to level the contest. The England
+          international then produced another moment of magic that enabled
+          Nicolas Jackson to guide the ball home from close range.
+        </p>
+      </div>
+      <figure>
+        <img
+          src="https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/editorial/match-reports/2024-25/Conference%20League%20final%20-%20Real%20Betis/Enzo_Fernandez_scores_vs_Real_Betis.jpg"
+          data-src="https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/editorial/match-reports/2024-25/Conference%20League%20final%20-%20Real%20Betis/Enzo_Fernandez_scores_vs_Real_Betis.jpg"
+          class="blur-up false lazyloaded"
+          alt="Fernandez heads home our equaliser in Wroclaw"
+        />
+        <figcaption>Fernandez heads home our equaliser in Wroclaw</figcaption>
+      </figure>
+    </section>
+
+    <section class="sancho">
+      <div class="text">
+        <p>
+          Yet the Blues were far from done. Jadon Sancho put gloss on the
+          scoreline with a fine finish from an acute angle before, in
+          second-half stoppage time, Moises Caicedo fired home our fourth.
+        </p>
+      </div>
+      <figure>
+        <img
+          src="https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/editorial/match-reports/2024-25/Conference%20League%20final%20-%20Real%20Betis/Jadon_Sancho_scores_vs_Real_Betis.jpg"
+          data-src="https://img.chelseafc.com/image/upload/f_auto,w_1400,q_90/editorial/match-reports/2024-25/Conference%20League%20final%20-%20Real%20Betis/Jadon_Sancho_scores_vs_Real_Betis.jpg"
+          class="blur-up false lazyloaded"
+          alt="Jadon Sancho watches on as his strike finds the corner"
+        />
+        <figcaption>
+          Jadon Sancho watches on as his strike finds the corner
+        </figcaption>
+      </figure>
+    </section>
+    <div class="teams">
+      <h2>The teams</h2>
+      <p>
+        <strong>Chelsea: </strong>Jorgensen; Gusto (James 46) Chalobah,
+        Badiashile, Cucurella; Fernandez (c), Caicedo; Madueke, Palmer (Guiu
+        88), Pedro Neto; Jackson (Dewsbury-Hall 80)<br />
+        <strong>Chelsea substitutes:</strong>
+        Sanchez, Bergstrom, Acheampong, Colwill, Tosin, Amougou, Sancho, George,
+        Nkunku<br /><strong>Scorers⚽</strong>: Fernandez 65', Jackson 70',
+        Sancho 83', Caicedo 90+1'<br /><strong>Booked🟨</strong>: Badiashile
+        55', Palmer' 79', Sancho 85'
+      </p>
+      <p>
+        <strong>Real Betis</strong>: Adrian; Sabaly, Natan, Bartra, R.Rodriguez
+        (Perraud 46); Cardoso (Lo Celso 85), Isco (c), Fornals (Altmira 85);
+        Anthony, Bakambu, Ezzalzouli (J.Rodriguez 54)<br /><strong
+          >Real Betis substitutes</strong
+        >: Vieities, Gonzalez, Perraud, Ruibal, Mendy, Ortiz, Flores, Garcia<br /><strong
+          >Scorers</strong
+        >: Ezzalzouli 9'<br /><strong>Booked🟨</strong>: Anthony 88'
+      </p>
+    </div>
+    <div class="trophy_video">
+      <figure>
+        <video autoplay muted loop id="trophy-video">
+          <source
+            src="templates/conference_league/Untitled video - Made with Clipchamp.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>The team lifting the conference league trophy</figcaption>
+      </figure>
+    </div>
+
+    <footer>
+      <img
+        class="logo"
+        src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_110,w_110,q_auto:best/Site%20Chelsea%20Badges/Main_Website_Badge_-_Colour.png"
+        data-src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_110,w_110,q_auto:best/Site%20Chelsea%20Badges/Main_Website_Badge_-_Colour.png"
+        class="blur-up false ls-is-cached lazyloaded"
+        alt="Main Website Badge   Colour"
+      />
+      <p>© 2025 Chelsea Football Club. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

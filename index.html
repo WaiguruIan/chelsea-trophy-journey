@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chelsea F.C Homepage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+
+      #bg-video {
+        position: fixed;
+        top: 2;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
+        filter: brightness(50%);
+      }
+
+      nav {
+        background-color: rgba(0, 0, 0, 0.1);
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav .champions-league a:hover {
+        background-color: #00d9ff;
+        color: black;
+      }
+      nav .europa-league a:hover {
+        background-color: rgb(251, 172, 25);
+        color: black;
+      }
+      nav .conference-league a:hover {
+        background-color: #81dd2b;
+        color: black;
+      }
+      nav .club-world-cup a:hover {
+        background-color: #ffee00;
+        color: black;
+      }
+      .intro h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        margin-top: 30px;
+        color: #034694;
+        font-size: 32px;
+      }
+      .intro {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        font-size: 19px;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        line-height: 1.6;
+        padding: 20px;
+      }
+      .journey1,
+      .journey2,
+      .journey3,
+      .journey4 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+      }
+
+      .journey1 img,
+      .journey2 img,
+      .journey3 img,
+      .journey4 img {
+        width: 750px;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .journey1 img:hover,
+      .journey2 img:hover,
+      .journey3 img:hover,
+      .journey4 img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+      }
+      .text a {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+        margin: 10px;
+        color: white;
+        text-decoration: none;
+      }
+      .text a:hover {
+        color: blue;
+      }
+      .head {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 30px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+      .logo-top img {
+        display: block;
+        margin: 0px auto;
+        width: 120px;
+        padding: 10px;
+      }
+
+      footer {
+        background-color: rgba(0, 0, 0, 0.1);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        width: 100%;
+        bottom: 0;
+      }
+      footer p {
+        margin: 5px 0 0 0;
+        color: white;
+        font-size: 14px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <video autoplay muted loop id="bg-video">
+      <source src="templates/cover/282791.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="logo-top">
+      <header>
+        <img
+          class="logo"
+          src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_110,w_110,q_auto:best/Site%20Chelsea%20Badges/Main_Website_Badge_-_Colour.png"
+          data-src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_110,w_110,q_auto:best/Site%20Chelsea%20Badges/Main_Website_Badge_-_Colour.png"
+          class="blur-up false ls-is-cached lazyloaded"
+          alt="Main Website Badge   Colour"
+        />
+      </header>
+    </div>
+
+    <div class="head">
+      <h1>WELCOME TO THE CHELSEA FOOTBALL CLUB WEBSITE</h1>
+    </div>
+
+    <nav>
+      <div class="champions-league">
+        <a title="Champions League" href="champions league.html"
+          >Champions League</a
+        >
+      </div>
+
+      <div class="europa-league">
+        <a title="Europa League" href="europa league.html">Europa League</a>
+      </div>
+      <div class="conference-league">
+        <a title="Conference League" href="conference league.html"
+          >Conference League</a
+        >
+      </div>
+
+      <div class="club-world-cup">
+        <a title="Club World Cup" href="club world cup.html">Club World Cup</a>
+      </div>
+    </nav>
+
+    <div class="intro">
+      <h1>WE`VE WON IT ALL!!</h1>
+      <h2>
+        Chelsea Football Club has won all the major trophies making them one of
+        the few clubs to have achieved this feat. This accomplishment highlights
+        Chelsea's success on both the European and global stages.
+      </h2>
+    </div>
+    <div class="head">
+      <h1><u>OUR JOURNEY THROUGH THE YEARS</u></h1>
+    </div>
+    <section class="journey1">
+      <div class="text">
+        <a href="champions league.html"
+          ><h3>CLICK HERE TO VIEW OUR CHAMPIONS LEAGUE JOURNEY</h3></a
+        >
+      </div>
+      <div class="link-img">
+        <a href="champions league.html">
+          <img src="templates/cover/champions_league.jpg" />
+        </a>
+      </div>
+    </section>
+
+    <section class="journey2">
+      <div class="text">
+        <a href="europa league.html"
+          ><h3>CLICK HERE TO VIEW OUR EUROPA LEAGUE JOURNEY</h3></a
+        >
+      </div>
+      <div class="link-img">
+        <a href="europa league.html">
+          <img src="templates/cover/europa_league.jpg" />
+        </a>
+      </div>
+    </section>
+
+    <section class="journey3">
+      <div class="text">
+        <a href="conference league.html"
+          ><h3>CLICK HERE TO VIEW OUR CONFERENCE LEAGUE JOURNEY</h3></a
+        >
+      </div>
+      <div class="link-img">
+        <a href="conference league.html">
+          <img
+            src="https://img.chelseafc.com/image/upload/f_auto,c_fill,g_auto,w_1200,ar_16:9,q_90/editorial/match-reports/2024-25/Conference%20League%20final%20-%20Real%20Betis/Chelsea_lift_the_Conference_League_trophy.jpg"
+            data-src="https://img.chelseafc.com/image/upload/f_auto,c_fill,g_auto,w_1200,ar_16:9,q_90/editorial/match-reports/2024-25/Conference%20League%20final%20-%20Real%20Betis/Chelsea_lift_the_Conference_League_trophy.jpg"
+            class="blur-up false lazyloaded ls-is-cached"
+            alt="Chelsea lift the Conference League trophy"
+          />
+        </a>
+      </div>
+    </section>
+
+    <section class="journey4">
+      <div class="text">
+        <a href="club world cup.html"
+          ><h3>CLICK HERE TO VIEW OUR CLUB WORLD CUP JOURNEY</h3></a
+        >
+      </div>
+      <div class="link-img">
+        <a href="club world cup.html">
+          <img src="templates/cover/club_world_cup.jpg" />
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <img
+        src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/logos/sponsors/footer-logos/easports_footer_600x200.png"
+        data-src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_88,w_264,q_90/logos/sponsors/footer-logos/easports_footer_600x200.png"
+        class="blur-up false ls-is-cached lazyloaded"
+        alt="easports footer 600x200"
+      />
+      <img
+        class="logo"
+        src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_110,w_110,q_auto:best/Site%20Chelsea%20Badges/Main_Website_Badge_-_Colour.png"
+        data-src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_110,w_110,q_auto:best/Site%20Chelsea%20Badges/Main_Website_Badge_-_Colour.png"
+        class="blur-up false ls-is-cached lazyloaded"
+        alt="Main Website Badge   Colour"
+      />
+      <p>© 2025 Chelsea Football Club. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

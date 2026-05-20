@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2021 Club World Cup</title>
+    <style>
+      nav {
+        background-color: rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+      nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color: #ffee00;
+        color: black;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        overflow-x: hidden;
+        background-color: rgb(0, 0, 0, 1);
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("../../templates/club_world_cup/pxfuel.jpg");
+        background-size: contain;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        filter: brightness(100%);
+      }
+      .intro,
+      .about,
+      .about2 {
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.2);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        line-height: 1.6;
+        padding: 20px;
+        padding-left: 20px;
+        filter: opacity(2000%);
+        filter: brightness(150%);
+      }
+      .penalty {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 40px;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      .lukaku {
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      .penalty img,
+      .lukaku img {
+        border-radius: 20px;
+        width: 700px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .penalty img:hover,
+      .lukaku img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .penalty .text,
+      .lukaku .text {
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.2);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        line-height: 1.6;
+        padding: 20px;
+        filter: opacity(2000%);
+        filter: brightness(150%);
+      }
+      .havertz .text {
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.2);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        line-height: 1.6;
+        padding: 20px;
+        filter: opacity(2000%);
+        filter: brightness(150%);
+      }
+      .havertz figure {
+        text-align: center;
+        align-items: center;
+      }
+      .havertz img {
+        width: 790px;
+        border-radius: 50px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .havertz img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .havertz figcaption {
+        color: aqua;
+        font-style: italic;
+        font-size: 13px;
+        padding-top: 13px;
+      }
+
+      footer {
+        background-color: rgba(0, 0, 0, 0.1);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        width: 100%;
+        bottom: 0;
+      }
+      footer p {
+        margin: 5px 0 0 0;
+        color: white;
+        font-size: 14px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="../../club world cup.html">BACK</a>
+    </nav>
+
+    <div class="intro">
+      <h1>FIFA CLUB WORLD CUP 2021 FINAL</h1>
+      <h3>We’ve won it all!!</h3>
+    </div>
+
+    <div class="about">
+      <p>
+        Kai Havertz, the man whose Champions League final goal qualified Chelsea
+        for this FIFA Club World Cup tournament, scored a penalty with three
+        minutes of extra-time remaining to ensure the Blues can call ourselves
+        the champions of the world and have completed our full trophy
+        collection.
+      </p>
+      <p>
+        It was a cruel blow for Palmeiras, who had dominated the second half and
+        extra-time after a first period in which Chelsea had the better chances.
+        But it was Havertz who held his nerve to send Chelsea fans around the
+        world into raptures.
+      </p>
+    </div>
+
+    <section class="penalty">
+      <div class="text">
+        <p>
+          The decisive spot-kick was awarded for handball, the second such
+          decision during this slow burner of a game in Abu Dhabi.
+        </p>
+      </div>
+      <div class="penalty-img">
+        <figure>
+          <img
+            src="https://img.chelseafc.com/image/upload/f_auto,w_1440,c_fill,q_90/editorial/match-reports/2021-22/palmeiras-cwc-final/GettyImages-1370173963.jpg"
+            data-src="https://img.chelseafc.com/image/upload/f_auto,w_1440,c_fill,q_90/editorial/match-reports/2021-22/palmeiras-cwc-final/GettyImages-1370173963.jpg"
+            class="blur-up image-is-loaded ls-is-cached lazyloaded"
+            alt="GettyImages 1370173963"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <section class="lukaku">
+      <div class="text">
+        <p>
+          Kovacic played his part, with a ball out to Hudson-Odoi. What followed
+          was a good old-fashioned centre-forward’s goal – with a no-nonsense
+          cross sent over early and Lukaku rising above the defence to power in
+          a near-post header.
+        </p>
+      </div>
+      <div class="lukaku-img">
+        <figure>
+          <img
+            src="https://img.chelseafc.com/image/upload/f_auto,w_1440,c_fill,q_90/editorial/match-reports/2021-22/palmeiras-cwc-final/lukaku-goal-2-cwc-final.jpg"
+            data-src="https://img.chelseafc.com/image/upload/f_auto,w_1440,c_fill,q_90/editorial/match-reports/2021-22/palmeiras-cwc-final/lukaku-goal-2-cwc-final.jpg"
+            class="blur-up false ls-is-cached lazyloaded"
+            alt="lukaku goal 2 cwc final"
+          />
+          <figcaption>Lukaku heads Chelsea in front</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="about2">
+      <p>
+        It was a lead that lasted until the 73rd minute, when a cross-shot from
+        the right was diverted in off Thiago Silva’s arm which led to a penalty
+        for Palmeiras and was converted by Raphael viega sending Mendy the wrong
+        way.
+      </p>
+      <p>
+        Extra-time followed, with both sides having chances to win it before
+        Havertz’s moment of magic.
+      </p>
+    </div>
+    <section class="havertz">
+      <div class="text">
+        <p>
+          Initially, it looked like our captain wanted to take the penalty
+          himself but then he handed the ball to Havertz who from a long run-up,
+          could not have scored it any more emphatically. And that was enough,
+          although there was still time for Luan to be sent-off for bringing
+          down Havertz who was heading towards goal.
+        </p>
+      </div>
+      <div class="img">
+        <figure>
+          <img
+            src="https://img.chelseafc.com/image/upload/f_auto,w_1440,c_fill,q_90/editorial/match-reports/2021-22/palmeiras-cwc-final/havertz-celebration-cwc.jpg"
+            data-src="https://img.chelseafc.com/image/upload/f_auto,w_1440,c_fill,q_90/editorial/match-reports/2021-22/palmeiras-cwc-final/havertz-celebration-cwc.jpg"
+            class="blur-up false ls-is-cached lazyloaded"
+            alt="havertz celebration cwc"
+          />
+          <figcaption>Havertz wheels away in celebration</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer>
+      <img
+        class="logo"
+        src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_110,w_110,q_auto:best/Site%20Chelsea%20Badges/Main_Website_Badge_-_Colour.png"
+        data-src="https://img.chelseafc.com/image/upload/f_auto,c_pad,h_110,w_110,q_auto:best/Site%20Chelsea%20Badges/Main_Website_Badge_-_Colour.png"
+        class="blur-up false ls-is-cached lazyloaded"
+        alt="Main Website Badge   Colour"
+      />
+      <p>© 2025 Chelsea Football Club. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
